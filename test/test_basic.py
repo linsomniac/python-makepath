@@ -39,4 +39,14 @@ class Test(unittest.TestCase):
 		makepath.makepath(relative_directory)
 		self.assertTrue(os.path.exists(relative_directory))
 
+		self.assertTrue(os.path.exists('a'))
+		self.assertFalse(os.path.exists('b'))
+		self.assertFalse(os.path.exists('c'))
+		self.assertFalse(os.path.exists('d'))
+		makepath.makepath('a', 'b', 'c', 'd')
+		self.assertTrue(os.path.exists('a'))
+		self.assertTrue(os.path.exists('b'))
+		self.assertTrue(os.path.exists('c'))
+		self.assertTrue(os.path.exists('d'))
+
 print unittest.main()
