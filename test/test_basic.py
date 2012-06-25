@@ -26,6 +26,8 @@ class Test(unittest.TestCase):
 	
 	def test_basic(self):
 		'''Test basic makepath function calls.'''
+		self.assertFalse(os.path.exists('a'))
 		makepath.makepath('a')
+		self.assertTrue(os.path.exists('a'))
 
 print unittest.main()
