@@ -30,4 +30,8 @@ class Test(unittest.TestCase):
 		makepath.makepath('a')
 		self.assertTrue(os.path.exists('a'))
 
+		self.assertFalse(os.path.exists('a/b/c/d'))
+		makepath.makepath('a/b/c/d')
+		self.assertTrue(os.path.exists('a/b/c/d'))
+
 print unittest.main()
