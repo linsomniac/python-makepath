@@ -15,6 +15,7 @@ class Test(unittest.TestCase):
 		self.testdir = os.path.join('/tmp/makepath-test.%s' % os.getpid())
 		if os.path.exists(self.testdir):
 			os.system('rm -rf "%s"' % self.testdir)
+		os.makedirs(self.testdir)
 		os.chdir(self.testdir)
 	
 	@classmethod
