@@ -6,6 +6,7 @@ import sys
 sys.path.append('.')
 sys.path.append('..')
 import os
+import makepath
 
 import unittest
 
@@ -25,7 +26,6 @@ class Test(unittest.TestCase):
 	
 	def test_basic(self):
 		'''Test basic makepath function calls.'''
-		import makepath
 		makepath.makepath('a')
 
 print unittest.main()
