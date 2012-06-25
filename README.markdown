@@ -15,6 +15,10 @@ Test Driven Develoment techniques, after I gave a presentation on how TDD
 helped me to achieve the, seemingly impossible, at a code retreat
 (implementation of Conway's Game of Life in under 45 minutes).
 
+The git history here is probably interesting, as it shows each step I made
+in the development process, to illustrate how I approached the test-driven
+development process.
+
 Presentation:
 
    http://sea.ucar.edu/event/retreat-software-development-trenches
