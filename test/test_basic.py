@@ -34,4 +34,9 @@ class Test(unittest.TestCase):
 		makepath.makepath('a/b/c/d')
 		self.assertTrue(os.path.exists('a/b/c/d'))
 
+		relative_directory = os.path.join(os.getcwd(), str(os.getpid()))
+		self.assertFalse(os.path.exists(relative_directory))
+		makepath.makepath(relative_directory)
+		self.assertTrue(os.path.exists(relative_directory))
+
 print unittest.main()
