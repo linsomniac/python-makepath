@@ -21,3 +21,10 @@ class Test(unittest.TestCase):
 	def tearDown(self):
 		if os.path.exists(self.testdir):
 			os.system('rm -rf "%s"' % self.testdir)
+	
+	def test_basic(self):
+		'''Test basic makepath function calls.'''
+		import makepath
+		makepath.makepath('a')
+
+print unittest.main()
