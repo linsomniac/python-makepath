@@ -19,6 +19,8 @@ The git history here is probably interesting, as it shows each step I made
 in the development process, to illustrate how I approached the test-driven
 development process.
 
+To run the tests, do: cd test; make
+
 Presentation:
 
    http://sea.ucar.edu/event/retreat-software-development-trenches
